@@ -606,8 +606,8 @@ Advantages */
     display: flex;
     flex-wrap: wrap;
 
-    margin-left: -1 * var(--portfolio-gap);
-    margin-top: -1 * var(--portfolio-gap);
+    margin-left: calc(-1 * var(--portfolio-gap));
+    margin-top: calc(-1 * var(--portfolio-gap));
 }
 
 .examples .poster {
@@ -697,8 +697,8 @@ Advantages */
 
     background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity 250ms var(--transform-effect),
-    box-shadow 2000ms var(--transform-effect) 500ms;
+    transition: opacity 250ms var(--transform-effect), 
+    visibility 250ms var(--transform-effect); 
 }
 
 .is-hidden {
@@ -709,8 +709,8 @@ Advantages */
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.2);
-
+    transform: translate(-50%, -50%) scale(1.1);
+    
     box-shadow: none;
 }
 
@@ -718,7 +718,7 @@ Advantages */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); 
 
     width: 528px;
     height: 581px;
@@ -728,7 +728,7 @@ Advantages */
     border-radius: 4px;
 
     transition: transform 250ms var(--transform-effect),
-    box-shadow 250ms var(--transform-effect);
+    box-shadow 250ms var(--transform-effect); 
 }
 
 .modal .close-btn {
